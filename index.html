@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muntaqim Asbuch - Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="roblox.css">
+</head>
+<body style="position:relative;overflow-x:hidden;">
+    <!-- Roblox Video Background -->
+    <video id="bg-video" autoplay loop muted playsinline style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-2;">
+        <source src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/698780/2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e.webm" type="video/webm">
+        <source src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/698780/2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- Overlay for dark effect -->
+    <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(24,25,26,0.7);z-index:-1;"></div>
+    <!-- Navigation -->
+    <header>
+        <div style="max-width:1200px;margin:auto;padding:0 1rem;display:flex;justify-content:space-between;align-items:center;height:70px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+                <div class="gradient-bg" style="width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+                    <span style="color:#fff;font-weight:700;font-size:1.5rem;">S</span>
+                </div>
+                <span style="font-weight:700;font-size:1.3rem;letter-spacing:1px;">Muntaqim Asbuch</span>
+            </div>
+            <nav style="display:flex;gap:2rem;">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" style="padding:100px 0 60px 0;">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div style="flex:1 1 0;min-width:300px;margin-bottom:2rem;">
+                    <h1 style="font-size:2.5rem;font-weight:700;line-height:1.1;margin-bottom:1rem;letter-spacing:1px;">Hi, I'm <span style="color:#00b3ff;">Muntaqim Asbuch</span></h1>
+                    <h2 style="font-size:1.5rem;color:#b3e0ff;margin-bottom:1.5rem;font-weight:700;">Just Ordinary Man & Open Source Enthusiast</h2>
+                    <p style="font-size:1.1rem;color:#e3e3e3;margin-bottom:2rem;max-width:500px;">I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even if you don't hire me, these projects showcase my passion for clean code and innovative solutions.</p>
+                    <div style="display:flex;gap:1rem;">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="#contact" class="btn" style="background:#18191a;color:#00b3ff;border:2px solid #00b3ff;">Contact Me</a>
+                    </div>
+                </div>
+                <div style="flex:1 1 0;display:flex;justify-content:center;">
+                    <div style="position:relative;">
+                        <div style="width:220px;height:220px;border-radius:24px;overflow:hidden;background:#18191a;border:4px solid #00b3ff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(0,179,255,0.15);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPo6joxTsHHTYzUCTvjdjT3IrdRa_10yT67Q&s" alt="Avatar" style="width:100%;height:100%;object-fit:cover;" />
+                        </div>
+                        <div style="position:absolute;bottom:-18px;right:-18px;background:#00b3ff;color:#18191a;padding:0.5em 1.2em;border-radius:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,179,255,0.15);font-size:1.1rem;">5+ Years</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background:#18191a;padding:60px 0;">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div style="text-align:center;margin-bottom:2.5rem;">
+                <h2 style="font-size:2rem;font-weight:700;margin-bottom:1rem;letter-spacing:1px;">My Technical Skills</h2>
+                <p style="color:#b3e0ff;max-width:600px;margin:auto;">
+                    My main focus is on Python development—building robust web apps, automations, and data-driven solutions. I also have experience with JavaScript, React, Node.js, and more, but Python is my strongest skill and the core of most of my projects.
+                </p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;">
+                <span class="tech-badge"><i data-feather="code"></i> JavaScript</span>
+                <span class="tech-badge"><i data-feather="box"></i> React</span>
+                <span class="tech-badge"><i data-feather="server"></i> Node.js</span>
+                <span class="tech-badge"><i data-feather="database"></i> MongoDB</span>
+                <span class="tech-badge"><i data-feather="cpu"></i> Python</span>
+                <span class="tech-badge"><i data-feather="smartphone"></i> React Native</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background:#232527;padding:60px 0;">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">
+                    Here are some of my recent projects. Check out my GitHub for more!
+                </p>
+            </div>
+            
+            <div id="repos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Repos will be loaded here -->
+                <div class="bg-white rounded-xl shadow-md p-6 animate-pulse">
+                    <div class="h-6 bg-slate-200 rounded w-3/4 mb-4"></div>
+                    <div class="h-4 bg-slate-200 rounded w-full mb-2"></div>
+                    <div class="h-4 bg-slate-200 rounded w-5/6 mb-4"></div>
+                    <div class="h-10 bg-slate-200 rounded w-full"></div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 animate-pulse">
+                    <div class="h-6 bg-slate-200 rounded w-3/4 mb-4"></div>
+                    <div class="h-4 bg-slate-200 rounded w-full mb-2"></div>
+                    <div class="h-4 bg-slate-200 rounded w-5/6 mb-4"></div>
+                    <div class="h-10 bg-slate-200 rounded w-full"></div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 animate-pulse">
+                    <div class="h-6 bg-slate-200 rounded w-3/4 mb-4"></div>
+                    <div class="h-4 bg-slate-200 rounded w-full mb-2"></div>
+                    <div class="h-4 bg-slate-200 rounded w-5/6 mb-4"></div>
+                    <div class="h-10 bg-slate-200 rounded w-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background:#18191a;padding:60px 0;">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-slate-600 mb-12">
+                    Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-6 mb-12">
+                    <a href="https://github.com/shemilael" target="_blank" class="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors shadow-md">
+                        <i data-feather="github" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shemilael/" class="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors shadow-md">
+                        <i data-feather="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="http://twitter.com/shemilael" class="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors shadow-md">
+                        <i data-feather="twitter" class="w-6 h-6"></i>
+                    </a>
+                    <a href="mailto:muntaqim.asbuch@pu.go.id" class="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors shadow-md">
+                        <i data-feather="mail" class="w-6 h-6"></i>
+                    </a>
+                </div>
+                
+                <a href="mailto:muntaqim.asbuch@pu.go.id" class="inline-block px-8 py-4 bg-primary text-white rounded-lg font-medium hover:bg-indigo-700 transition-colors shadow-lg">
+                    Send me an email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-full gradient-bg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">S</span>
+                        </div>
+                        <span class="font-bold text-white">Muntaqim Asbuch</span>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p>© 2025 Muntaqim Asbuch. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #232527;
+    color: #e3e3e3;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background: #18191a;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+header {
+    border-bottom: 4px solid #00b3ff;
+}
+footer {
+    border-top: 4px solid #00b3ff;
+}
+.gradient-bg {
+    background: linear-gradient(135deg, #00b3ff 0%, #1a8cff 100%);
+}
+nav a {
+    color: #b3e0ff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #fff;
+}
+.repo-card {
+    background: #232527;
+    border: 2px solid #00b3ff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.repo-card:hover {
+    transform: scale(1.03) rotate(-1deg);
+    box-shadow: 0 8px 32px rgba(0,179,255,0.15);
+    border-color: #1a8cff;
+}
+.tech-badge {
+    background: #18191a;
+    color: #00b3ff;
+    border: 1px solid #00b3ff;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    font-weight: 700;
+    margin: 0.25em;
+    display: inline-block;
+    transition: background 0.2s, color 0.2s;
+}
+.tech-badge:hover {
+    background: #00b3ff;
+    color: #18191a;
+}
+button, .btn, a.btn {
+    background: #00b3ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75em 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0,179,255,0.15);
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+button:hover, .btn:hover, a.btn:hover {
+    background: #fff;
+    color: #00b3ff;
+}
+section {
+    margin-bottom: 2.5rem;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: #18191a;
+}
+::-webkit-scrollbar-thumb {
+    background: #00b3ff;
+    border-radius: 8px;
+}
